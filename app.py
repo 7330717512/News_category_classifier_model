@@ -3,8 +3,8 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
-tfidf = pickle.load(open('tfidf.pickle', 'rb'))
-mnb = pickle.load(open('mnb.pickle', 'rb'))
+tfidf = pickle.load(open('count_vectorizer.pickle', 'rb'))
+mnb = pickle.load(open('nb_classifier.pickle', 'rb'))
 
 
 
